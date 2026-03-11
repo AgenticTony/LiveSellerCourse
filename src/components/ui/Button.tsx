@@ -33,8 +33,9 @@ export default function Button({
 
   const variants = {
     primary: `
-      bg-brand-orange text-surface-base
-      hover:bg-brand-amber hover:shadow-lg hover:shadow-brand-orange/25
+      bg-brand-orange text-surface-base font-medium
+      shadow-[0_0_20px_-5px_rgba(217,119,6,0.5)]
+      hover:bg-brand-amber hover:shadow-[0_0_30px_-5px_rgba(217,119,6,0.7)]
       active:scale-[0.98]
       before:absolute before:inset-0 before:bg-white/20 before:translate-y-full before:transition-transform
       hover:before:translate-y-0
@@ -56,7 +57,7 @@ export default function Button({
   };
 
   const sizes = {
-    sm: "px-4 py-2 text-sm h-9",
+    sm: "px-5 py-2.5 text-sm h-10",
     md: "px-6 py-3 text-base h-12",
     lg: "px-10 py-5 text-xl h-16",
   };

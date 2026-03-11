@@ -27,9 +27,9 @@ export default function Navbar() {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-[100] transition-all duration-300",
         isScrolled
-          ? "bg-surface-base/95 backdrop-blur-md border-b border-surface-border"
+          ? "bg-surface-base/95 backdrop-blur-xl border-b border-surface-border"
           : "bg-transparent"
       )}
     >
@@ -56,9 +56,10 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="font-body text-sm text-text-secondary hover:text-text-primary transition-colors animated-underline"
+                className="relative font-body text-base text-text-secondary hover:text-text-primary transition-colors group"
               >
                 {item.name}
+                <span className="absolute bottom-0 left-0 w-0 h-px bg-brand-orange transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </div>
@@ -66,7 +67,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link href="/apply">
-              <Button variant="primary" size="sm">
+              <Button variant="primary" size="md">
                 Apply Now
               </Button>
             </Link>
@@ -74,7 +75,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-text-secondary hover:text-text-primary"
+            className="md:hidden p-2 text-text-secondary hover:text-text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -115,7 +116,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="font-body text-text-secondary hover:text-text-primary transition-colors py-2"
+                className="font-body text-lg text-text-secondary hover:text-text-primary transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
