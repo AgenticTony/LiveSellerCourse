@@ -212,7 +212,6 @@ MIT License - see LICENSE file for details.
 
 ## Contact
 
-- Website: [livesellerbootcamp.co.uk](https://livesellerbootcamp.co.uk)
 - GitHub: [@AgenticTony](https://github.com/AgenticTony)
 
 ---
