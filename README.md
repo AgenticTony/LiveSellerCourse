@@ -1,6 +1,6 @@
 # LiveSellerBootcamp
 
-A premium 3-day live selling training course website with a dark industrial aesthetic. Built for NKDeals Live Seller Bootcamp.
+A premium 3-day live selling training course website with a dark industrial aesthetic. Built for NKDeals Live Seller Bootcamp. Here is a live link to the demo site: https://live-seller-course.vercel.app/
 
 ## Overview
 
